@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.bouyout.electricity
+productName: منظومة خدمة بيوت
+win:
+  target:
+    - nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  shortcutName: خدمة بيوت
+files:
+  - filter:
+      - main.js
+      - index.html
+      - config.json
+      - version.json
+electronVersion: 33.4.11
